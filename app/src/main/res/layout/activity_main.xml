@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+    <!-- android:layout_gravity="center" é usada para definir o alinhamento do elemento dentro do espaço fornecido pelo layout pai.-->
+    <!--         android:textSize="16sp" definir tamanho da font  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcule quanto tempo falta para a sua aposentadoria"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        />
+    <!-- No desenvolvimento de aplicativos Android usando Kotlin, um Spinner é um widget de interface do usuário (UI) que fornece uma maneira de selecionar um item de uma lista suspensa. É semelhante a um menu suspenso ou lista suspensa em outras plataformas. -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha o sexo"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_sexo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite a idade"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_idade"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calcular"
+        android:text="Calcular"
+        />
+    <!--Exibição de texto: O TextView é usado para exibir texto na interface do usuário.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultado"
+        />
+</LinearLayout>
